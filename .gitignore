@@ -1,0 +1,15 @@
+# Created by .ignore support plugin (hsz.mobi)
+.idea/*
+.DS_Store
+css/.DS_Store
+img/.DS_Store
+portfolio/.DS_Store
+portfolio/img/.DS_Store
+.gitignore
+.idea/compiler.xml
+.idea/copyright/
+.idea/dictionaries/
+.idea/misc.xml
+.idea/modules.xml
+.idea/workspace.xml
+IMG/
