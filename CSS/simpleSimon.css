@@ -5,23 +5,23 @@ background-color: #0f0f0f}
 /*un-comment for animation within the game*/
 
 
-/*.flex-container {*/
-    /*-webkit-animation: cssAnimation 0.2962s 2 linear;*/
-    /*-moz-animation: cssAnimation 0.2962s 2 linear;*/
-    /*-o-animation: cssAnimation 0.2962s 2 linear;*/
-/*}*/
-/*@-webkit-keyframes cssAnimation {*/
-    /*from { -webkit-transform: rotate(4deg) scale(1) skew(1deg) translate(10px); }*/
-    /*to { -webkit-transform: rotate(342deg) scale(0.183) skew(1deg) translate(0px); }*/
-/*}*/
-/*@-moz-keyframes cssAnimation {*/
-    /*from { -moz-transform: rotate(4deg) scale(1) skew(1deg) translate(10px); }*/
-    /*to { -moz-transform: rotate(342deg) scale(0.183) skew(1deg) translate(0px); }*/
-/*}*/
-/*@-o-keyframes cssAnimation {*/
-    /*from { -o-transform: rotate(4deg) scale(1) skew(1deg) translate(10px); }*/
-    /*to { -o-transform: rotate(342deg) scale(0.183) skew(1deg) translate(0px); }*/
-/*}*/
+.flex-container {
+    -webkit-animation: cssAnimation 0.2962s 2 linear;
+    -moz-animation: cssAnimation 0.2962s 2 linear;
+    -o-animation: cssAnimation 0.2962s 2 linear;
+}
+@-webkit-keyframes cssAnimation {
+    from { -webkit-transform: rotate(4deg) scale(1) skew(1deg) translate(10px); }
+    to { -webkit-transform: rotate(342deg) scale(0.183) skew(1deg) translate(0px); }
+}
+@-moz-keyframes cssAnimation {
+    from { -moz-transform: rotate(4deg) scale(1) skew(1deg) translate(10px); }
+    to { -moz-transform: rotate(342deg) scale(0.183) skew(1deg) translate(0px); }
+}
+@-o-keyframes cssAnimation {
+    from { -o-transform: rotate(4deg) scale(1) skew(1deg) translate(10px); }
+    to { -o-transform: rotate(342deg) scale(0.183) skew(1deg) translate(0px); }
+}
 
 /*.flex-item:hover{*/
     /*transform: rotate(110deg) scale(1.241) skew(-167deg) translate(9px);*/

@@ -5,7 +5,6 @@ $(document).ready(function () {
     'use strict';
 
 
-
 //global variables
     var redTile = $('#red');
     var blueTile = $('#blue');
@@ -141,52 +140,53 @@ $(document).ready(function () {
             return false;
         }
     }
-});
+
 
 //player move pushed into array
-function trakMove() {
-    var clicked = this.id;
+    function trakMove() {
+        var clicked = this.id;
 
-    switch (clicked) {
-        case 'blue':
-            playerMoves.push(blue);
-            success();
-            break;
-        case 'yellow':
-            playerMoves.push(yellow);
-            success();
-            break;
-        case 'red':
-            playerMoves.push(red);
-            success();
-            break;
-        case 'green':
-            playerMoves.push(green);
-            success();
+        switch (clicked) {
+            case 'blue':
+                playerMoves.push(blue);
+                success();
+                break;
+            case 'yellow':
+                playerMoves.push(yellow);
+                success();
+                break;
+            case 'red':
+                playerMoves.push(red);
+                success();
+                break;
+            case 'green':
+                playerMoves.push(green);
+                success();
+        }
     }
-}
 
-function success() {
-    if (strictMode && !moveChecker(playerMoves.length - 1)) {
-        score.html('You SUCK!');
-        setTimeout(gameOff, 2000);
-    } else if (!moveChecker(playerMoves.length - 1)) {
-        score.html('You Suck!');
-        playerMoves=[];
-        setTimeout(playSteps, 2000);
-    } else {
-        //count++;
-        correctSeq();
-        score.html(count);
-        overCheck();
+    function success() {
+        if (strictMode && !moveChecker(playerMoves.length - 1)) {
+            score.html('Keep Trying!');
+            setTimeout(gameOff, 2000);
+        } else if (!moveChecker(playerMoves.length - 1)) {
+            score.html('Keep Trying!');
+            playerMoves = [];
+            setTimeout(playSteps, 2000);
+        } else {
+            //count++;
+            correctSeq();
+            score.html(count);
+            overCheck();
 
+        }
     }
-}
 
-function correctSeq() {
-    if (playerMoves.length-1 === count) {
-        count++;
-        setTimeout(playSteps, 2000);
-        playerMoves = [];
+    function correctSeq() {
+        if (playerMoves.length - 1 === count) {
+            count++;
+            setTimeout(playSteps, 2000);
+            playerMoves = [];
+        }
     }
-}
+});
